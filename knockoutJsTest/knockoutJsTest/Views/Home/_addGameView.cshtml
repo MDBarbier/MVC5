@@ -1,0 +1,33 @@
+﻿<form role="form">
+    <div class="form-group">
+        <label for="inpName">Game Name</label>
+        <input id="inpName" type="text" class="form-control" data-bind="value: Name" />
+    </div>
+
+    <div class="form-group">
+        <label for="inpGenre">Genre</label>
+        <input id="inpGenre" type="text" class="form-control" data-bind="value: Genre" />
+    </div>
+
+    <div class="form-group">
+        <label for="inpDesc">Description</label>
+        <input id="inpDesc" type="text" class="form-control" data-bind="value: Desc" />
+    </div>
+
+    <div class="form-group">
+        <label for="inpRating">Rating (0 to 100)</label>
+        <input id="inpRating" type="number" class="form-control" data-bind="value: Rating" />
+    </div>
+
+    <div class="form-group">
+        <label for="inpPPH">PPH (Pound Per Hour)</label>
+        <input id="inpPPH" type="number" class="form-control" data-bind="value: PPH" />
+    </div>
+
+    <div class="form-group">
+        <label for="inpCompleted">Completed?</label>
+        <input id="inpCompleted" type="checkbox" class="form-control" data-bind="value: Completed" />
+    </div>
+</form>
+
+<input type="button" id="btnAddStudent" class="btn btn-primary" value="Add Student" data-bind="click: addStudent" /> 
