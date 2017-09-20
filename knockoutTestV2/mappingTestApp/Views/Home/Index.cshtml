@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script src="~/Scripts/knockout-3.4.2.js"></script>
+
+<h4>Games</h4>
+<button data-bind="click: GetGames">Get Games</button>
+<ul data-bind="foreach: Games">
+    <li>
+        Name at position <span data-bind="text: $index"> </span>:
+        <span data-bind="text: Name"> </span>        
+        <span data-bind="text: Genre"> </span> 
+        <span data-bind="text: Rating"> </span>
+        <a href="#" data-bind="click: $parent.removeGame">Remove</a>
+    </li>
+</ul>
+
+
+<h4>Add new game</h4>
+<p>Game name: <input data-bind="value: Name" /></p>
+<p>Game genre: <input data-bind="value: Genre" /></p>
+<p>Game rating: <input data-bind="value: Rating" /></p>
+<button data-bind="click: SubmitGame">Submit</button>
+<br />
+<label for="id">Assigned ID:</label>
+<p><input name="id" data-bind="value: Id" readonly /></p>
+
+<script src="~/Scripts/GameVM.js"></script>

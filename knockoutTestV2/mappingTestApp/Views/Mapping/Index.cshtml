@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Mapping test";
+}
+
+<script src="~/Scripts/knockout-3.4.2.js"></script>
+<script src="~/Scripts/knockout.mapping-latest.js"></script>
+
+<h2>Index</h2>
+
+<span data-bind="text: Name"> </span>
+<span data-bind="text: Age"> </span>
+
+<input type="text" id="newName" value="" />
+<input type="text" id="newAge" value="" />
+
+<button onclick="Update()">Update</button>
+
+<script src="~/Scripts/MappingVM.js"></script>
