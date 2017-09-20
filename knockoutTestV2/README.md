@@ -1,0 +1,1 @@
+<p>knockout test v2 has a working knockout interface where you can list, delete and add records. Knockout VM uses AJAX calls to a Web API controller, which uses EF6 to communicate with the db (internal .mdf in this case). There is also an example of using the Knockout Mapping plugin to map a JS object automatically to a viewmodel.</p>
